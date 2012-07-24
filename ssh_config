@@ -1,0 +1,3 @@
+Host linode
+    User deploy
+    HostName ebroker.me

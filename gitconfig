@@ -1,0 +1,31 @@
+[user]
+  name = Bruno Barros
+  email = bkether@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+  ui = true
+[alias]
+  ad = add . && git status
+  re = pull --rebase
+  cm = commit -m
+  cv = commit -v
+  co = checkout
+  st = status
+  who = shortlog -s --
+  lp = log -p
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  sb = status -sb
+  br = branch
+  co = checkout
+  df = diff
+  cp = cherry-pick
+  stats = shortlog -sne
+  reset-soft = reset --soft HEAD^
+  reset-hard = reset --hard HEAD^
+[core]
+  editor = mvim
+  excludesfile = /Users/brunobarros/.gitignore
+[merge]
+	tool = vimdiff

@@ -1,0 +1,21 @@
+Permissões  Comando Descrição
+-r--------  chmod 400 arquivo Somente o dono pode ler o arquivo, ninguém pode escrever.
+-r--r--r--  chmod 444 arquivo Todos podem ler o arquivo, ninguém pode escrever.
+-rw-rw-rw-  chmod 666 arquivo Todos podem ler e escrever no arquivo.
+drwxrwxrwx  chmod 777 diretório Todos podem ler, escrever, criar ou apagar arquivos do diretório.
+drwx------  chmod 700 diretório Somente o dono pode ler, escrever, criar ou apagar arquivos. Ninguém mais pode ter acesso a este diretório.
+drwx-wx-wx  chmod 733 diretório O dono tem acesso total ao diretório. Todos os outros usuários podem apenas escrever.
+
+
+Number  Permission(s) Set
+0 (zero)  No Permissions
+(the user(s) cannot do anything)
+1 Execute Only
+(the user(s) can only execute the file)
+2 Write Only
+(the user(s) can only write to the file)
+3 Write and Execute Permissions
+4 Read Only
+5 Read and Execute Permissions
+6 Read and Write Permissions
+7 Read, Write and Execute Permissions

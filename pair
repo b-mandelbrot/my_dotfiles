@@ -1,0 +1,4 @@
+#!/bin/sh
+
+git config user.name "$1 & Bruno Barros"
+git config user.email "bkether@gmail.com"
