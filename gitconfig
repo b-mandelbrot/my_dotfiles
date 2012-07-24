@@ -15,7 +15,7 @@
   st = status
   who = shortlog -s --
   lp = log -p
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   sb = status -sb
   br = branch
   co = checkout
@@ -26,6 +26,6 @@
   reset-hard = reset --hard HEAD^
 [core]
   editor = mvim
-  excludesfile = /Users/brunobarros/.gitignore
+  excludesfile = /Users/brunosbarros/.gitignore
 [merge]
-	tool = vimdiff
+  tool = vimdiff
