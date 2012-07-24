@@ -3,6 +3,7 @@
 # =============================================================================
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
@@ -54,10 +55,10 @@ export TERM=xterm-color
 export LSCOLORS=DxGxcxdxCxegedabagacad
 export HISTCONTROL=ignoredups
 export HISTCONTROL=ignoreboth
-export EDITOR='mate -w'
+export EDITOR='mvim'
 export RUBYOPT=rubygems
 export JEWELER_OPTS="--rspec --gemcutter"
-export GIT_EDITOR="mate -w"
+export GIT_EDITOR="mvim"
 export NODE_PATH=/usr/local/lib/node_modules
 
 # Opscode exports
@@ -78,3 +79,34 @@ alias mem='memcached -vvv'
 alias redis="redis-server /usr/local/etc/redis.conf" # start redis old school
 alias resque="VVERBOSE=1 QUEUE=* rake environment resque:work" # start resque
 alias resque-web="resque-web -p 8282 config/initializers/resque-web.rb" # start resque-web
+
+# Bundler
+alias b="bundle"
+alias bopen="bundle open"
+alias bi="b install --path vendor"
+alias bu="b update"
+alias be="b exec"
+alias binit="bi && b package && echo 'vendor/ruby' >> .gitignore"
+
+# system #
+alias chmod_help='cat ~/.chmod'
+alias home='cd ~'
+alias l='ls -lah'
+alias tf='tail -f'
+alias mb='mate ~/.bash_profile'
+alias rebash='source ~/.zshrc'
+alias term_keys='cat ~/.term_bindings'
+alias mignore='mvim ~/.gitignore'
+alias mjanus='mvim ~/.janus.rake'
+alias mgit='mvim ~/.gitconfig'
+alias mzsh='mvim ~/.zshrc'
+
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+alias df='df -h'
+alias du='du -h'
+
+alias less='less -r' # raw control characters
+alias grep='egrep --color' # show differences in colour
