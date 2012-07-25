@@ -60,6 +60,8 @@ export JEWELER_OPTS="--rspec --gemcutter"
 export GIT_EDITOR="mvim"
 export NODE_PATH=/usr/local/lib/node_modules
 
+export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+
 # Opscode exports
 export OPSCODE_USER="bkether"
 export OPSCODE_FULLNAME="Bruno Barros"
