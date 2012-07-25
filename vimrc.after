@@ -1,0 +1,11 @@
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+set t_Co=256
+set background=dark
+color wombat
+set guifont=Monaco:h12
+set hlsearch
+set colorcolumn=80
+let g:RspecSplitHorizontal=0
+filetype plugin indent on
+syntax on
+syntax enable
